@@ -12,9 +12,9 @@ PID::~PID() {}
 
 void PID::Init(double Kp_, double Ki_, double Kd_)
 {
-	this->Kd = Kp_;
+	this->Kp = Kp_ ;
 	this->Ki = Ki_ ;
-	this->Kp = Kd_ ;
+	this->Kd = Kd_ ;
 
 	this->d_error = 0;
 	this->i_error = 0;
