@@ -22,9 +22,11 @@ Self-Driving Car Engineer Nanodegree Program
 * Derivative action predicts system behavior and thus improves settling time and stability of the system. Also system converges.  
 * It smoothens the output of system. Higher Kd makes vehicle very sensitive  and lower kd takes long time to reach the desired value.  
 
+![pid-controller](pid.png)
+
 Here is the final equation looks like for PID:
 
-	U =   - ( Kp * cte  +  Ki * int_cte   + Kd * diff_cte
+	U =   - ( Kp * cte  +  Ki * int_cte   + Kd * diff_cte)
 
 Where :
 * U : Control variable (example : steer angle , acceleration/throttle)  
@@ -43,7 +45,7 @@ Where :
   * Kp : 0.2  
   * Ki : 0.001    
   * Kd : 1.5  
-
+* The Video (video.ogv) of sucusessfully driving the car is shared in project repo.  
 ### Reference :
 * https://en.wikipedia.org/wiki/PID_controller   
 
